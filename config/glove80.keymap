@@ -105,13 +105,13 @@
             &kp TAB        &kp Q      &kp W      &kp E     &kp R      &kp T                                                                       &kp Y     &kp U     &kp I      &kp O      &kp P     &kp LBKT
             &kp ESC        &kp A      &kp S      &kp D     &kp F      &kp G                                                                       &kp H     &kp J     &kp K      &kp L      &kp SEMI  &kp SQT
             &kp LSHFT      &kp Z      &kp X      &kp C     &kp V      &kp B    &kp LSHFT   &kp BSPC    &kp LALT   &kp RALT  &kp DEL   &kp RSHFT   &kp N     &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
-            &magic MAGIC 0 &kp LSHFT  &kp LCTRL  &kp LGUI  &kp LALT            &kp SPACE   &lower      &kp BSPC   &kp DEL   &lower    &kp SPACE             &kp RALT  &kp RGUI   &kp RCTRL  &kp RSHFT &none
+            &magic MAGIC 0 &kp LSHFT  &kp LCTRL  &kp LGUI  &kp LALT            &kp SPACE   &mo LOWER   &kp BSPC   &kp DEL   &mo LOWER &kp SPACE             &kp RALT  &kp RGUI   &kp RCTRL  &kp RSHFT &none
             >;
         };
 
         lower_layer {
             bindings = <
-            &kp F11        &kp F12    &trans     &trans    &trans                                                                                           &trans    &trans    &trans     &trans     &trans
+            &kp F11        &kp F12    &trans     &trans    &trans                                                                                           &trans    &trans     &trans     &trans    &trans
             &trans         &trans     &trans     &trans    &trans     &trans                                                                      &kp PSCRN &trans    &trans     &trans     &trans    &kp EQUAL
             &kp F4         &trans     &trans     &kp PG_UP &kp PG_DN  &trans                                                                      &trans    &trans    &kp HOME   &kp END    &kp RIGHT &kp RBKT
             &trans         &kp ESC    &trans     &kp RET   &trans     &kp BSPC                                                                    &kp DEL   &kp LEFT  &trans     &trans     &kp CAPS  &kp BSLH
