@@ -16,8 +16,8 @@
 // layers
 #define DEFAULT 0
 #define LOWER 1
-#define MAGIC 2
-#define FACTORY_TEST 3
+#define NUM 2
+#define MAGIC 3
 
 / {
     behaviors {
@@ -125,7 +125,7 @@
             &kp TAB        &kp Q      &kp W      &kp E     &kp R       &kp T                                                                                 &kp Y     &kp U       &kp I      &kp O      &kp P     &kp LBKT
             &kp ESC        &kp A      &kp S      &kp D     &kp F       &kp G                                                                                 &kp H     &kp J       &kp K      &kp L      &kp SEMI  &kp SQT
             &kp LSHFT      &kp Z      &kp X      &kp C     &hm LSHFT V &kp B    &kp LSHFT        &kp BSPC    &kp LALT   &kp RALT  &kp DEL   &kp RSHFT        &kp N     &hm RSHFT M &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
-            &magic MAGIC 0 &kp LSHFT  &kp LCTRL  &kp LGUI  &mo LOWER            &lm LOWER SPACE  &kp LALT    &kp BSPC   &kp DEL   &kp RALT  &lm LOWER SPACE            &mo LOWER   &kp RGUI   &kp RCTRL  &kp RSHFT &none
+            &magic MAGIC 0 &kp LSHFT  &kp LCTRL  &kp LGUI  &mo NUM              &lm LOWER SPACE  &kp LALT    &kp BSPC   &kp DEL   &kp RALT  &lm LOWER SPACE            &mo NUM     &kp RGUI   &kp RCTRL  &kp RSHFT &none
             >;
         };
 
@@ -137,6 +137,17 @@
             &trans         &kp ESC    &trans     &kp RET   &trans      &kp BSPC                                                                              &kp DEL   &kp LEFT    &trans     &trans     &kp CAPS  &kp BSLH
             &trans         &trans     &trans     &kp DOWN  &kp UP      &trans   &trans           &trans      &trans     &trans    &trans    &trans           &trans    &trans      &trans     &trans     &trans    &trans
             &magic MAGIC 0 &trans     &trans     &trans    &trans               &kp BSPC         &trans      &trans     &trans    &trans    &kp DEL                    &trans      &trans     &trans     &trans    &trans
+            >;
+        };
+
+        num_layer {
+            bindings = <
+            &trans         &trans     &trans     &trans    &trans                                                                                                      &trans      &trans     &trans     &trans    &trans
+            &trans         &trans     &trans     &trans    &trans      &trans                                                                                &trans    &trans      &trans     &trans     &trans    &trans
+            &trans         &kp N1     &kp N2     &kp N3    &kp N4      &kp N5                                                                                &kp N6    &kp N7      &kp N8     &kp N9     &kp N0    &trans
+            &trans         &trans     &trans     &trans    &trans      &trans                                                                                &trans    &trans      &trans     &trans     &trans    &trans
+            &trans         &trans     &trans     &trans    &trans      &trans   &trans           &trans      &trans     &trans    &trans    &trans           &trans    &trans      &trans     &trans     &trans    &trans
+            &trans         &trans     &trans     &trans    &trans               &trans           &trans      &trans     &trans    &trans    &trans                     &trans      &trans     &trans     &trans    &trans
             >;
         };
 
