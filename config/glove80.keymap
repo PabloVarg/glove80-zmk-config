@@ -40,14 +40,24 @@
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
 
-        hm: homerow_mods {
+        lm: layer_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_MODS";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            bindings = <&mo>, <&kp>;
+        };
+
+        hm: home_row_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOME_ROW_MODS";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
-            bindings = <&mo>, <&kp>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -110,23 +120,23 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-            &kp F1         &kp F2     &kp F3     &kp F4    &kp F5                                                                                                     &kp F6    &kp F7     &kp F8     &kp F9    &kp F10
-            &kp GRAVE      &kp N1     &kp N2     &kp N3    &kp N4     &kp N5                                                                                &kp N6    &kp N7    &kp N8     &kp N9     &kp N0    &kp MINUS
-            &kp TAB        &kp Q      &kp W      &kp E     &kp R      &kp T                                                                                 &kp Y     &kp U     &kp I      &kp O      &kp P     &kp LBKT
-            &kp ESC        &kp A      &kp S      &kp D     &kp F      &kp G                                                                                 &kp H     &kp J     &kp K      &kp L      &kp SEMI  &kp SQT
-            &kp LSHFT      &kp Z      &kp X      &kp C     &kp V      &kp B    &kp LSHFT        &kp BSPC    &kp LALT   &kp RALT  &kp DEL   &kp RSHFT        &kp N     &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
-            &magic MAGIC 0 &kp LSHFT  &kp LCTRL  &kp LGUI  &mo LOWER           &hm LOWER SPACE  &kp LALT    &kp BSPC   &kp DEL   &kp RALT  &hm LOWER SPACE            &mo LOWER &kp RGUI   &kp RCTRL  &kp RSHFT &none
+            &kp F1         &kp F2     &kp F3     &kp F4    &kp F5                                                                                                      &kp F6      &kp F7     &kp F8     &kp F9    &kp F10
+            &kp GRAVE      &kp N1     &kp N2     &kp N3    &kp N4      &kp N5                                                                                &kp N6    &kp N7      &kp N8     &kp N9     &kp N0    &kp MINUS
+            &kp TAB        &kp Q      &kp W      &kp E     &kp R       &kp T                                                                                 &kp Y     &kp U       &kp I      &kp O      &kp P     &kp LBKT
+            &kp ESC        &kp A      &kp S      &kp D     &kp F       &kp G                                                                                 &kp H     &kp J       &kp K      &kp L      &kp SEMI  &kp SQT
+            &kp LSHFT      &kp Z      &kp X      &kp C     &hm LSHFT V &kp B    &kp LSHFT        &kp BSPC    &kp LALT   &kp RALT  &kp DEL   &kp RSHFT        &kp N     &hm RSHFT M &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
+            &magic MAGIC 0 &kp LSHFT  &kp LCTRL  &kp LGUI  &mo LOWER            &lm LOWER SPACE  &kp LALT    &kp BSPC   &kp DEL   &kp RALT  &lm LOWER SPACE            &mo LOWER   &kp RGUI   &kp RCTRL  &kp RSHFT &none
             >;
         };
 
         lower_layer {
             bindings = <
-            &kp F11        &kp F12    &trans     &trans    &trans                                                                                                     &trans    &trans     &trans     &trans    &trans
-            &trans         &trans     &trans     &trans    &trans     &trans                                                                                &kp PSCRN &trans    &trans     &trans     &trans    &kp EQUAL
-            &kp F4         &trans     &trans     &kp PG_UP &kp PG_DN  &trans                                                                                &trans    &trans    &kp HOME   &kp END    &kp RIGHT &kp RBKT
-            &trans         &kp ESC    &trans     &kp RET   &trans     &kp BSPC                                                                              &kp DEL   &kp LEFT  &trans     &trans     &kp CAPS  &kp BSLH
-            &trans         &trans     &trans     &kp DOWN  &kp UP     &trans   &trans           &trans      &trans     &trans    &trans    &trans           &trans    &trans    &trans     &trans     &trans    &trans
-            &magic MAGIC 0 &trans     &trans     &trans    &trans              &kp BSPC         &trans      &trans     &trans    &trans    &kp DEL                    &trans    &trans     &trans     &trans    &trans
+            &kp F11        &kp F12    &trans     &trans    &trans                                                                                                      &trans      &trans     &trans     &trans    &trans
+            &trans         &trans     &trans     &trans    &trans      &trans                                                                                &kp PSCRN &trans      &trans     &trans     &trans    &kp EQUAL
+            &kp F4         &trans     &trans     &kp PG_UP &kp PG_DN   &trans                                                                                &trans    &trans      &kp HOME   &kp END    &kp RIGHT &kp RBKT
+            &trans         &kp ESC    &trans     &kp RET   &trans      &kp BSPC                                                                              &kp DEL   &kp LEFT    &trans     &trans     &kp CAPS  &kp BSLH
+            &trans         &trans     &trans     &kp DOWN  &kp UP      &trans   &trans           &trans      &trans     &trans    &trans    &trans           &trans    &trans      &trans     &trans     &trans    &trans
+            &magic MAGIC 0 &trans     &trans     &trans    &trans               &kp BSPC         &trans      &trans     &trans    &trans    &kp DEL                    &trans      &trans     &trans     &trans    &trans
             >;
         };
 
