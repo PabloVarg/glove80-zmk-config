@@ -62,6 +62,7 @@
 
         lhm: left_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
+            label = "LEFT_HOME_ROW_MODS";
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <100>;
