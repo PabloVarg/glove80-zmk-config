@@ -185,15 +185,6 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-        combo_lower_left {
-            timeout-ms = <50>;
-            key-positions = <74 42>;
-            bindings = <&mo LOWER>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
