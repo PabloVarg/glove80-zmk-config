@@ -157,8 +157,8 @@
             bindings = <
             &kp F11        &kp F12      &trans      &trans     &trans                                                                                                      &trans       &trans     &trans      &trans         &trans
             &trans         &trans       &trans      &trans     &trans      &trans                                                                                &trans    &trans       &trans     &trans      &trans         &trans
-            &kp F4         &kp TAB      &kp F4      &kp PG_UP  &kp PG_DN   &trans                                                                                &kp PSCRN &trans       &kp HOME   &kp END     &kp RIGHT      &kp RBKT
-            &trans         &kp ESC      &trans      &kp RET    &trans      &kp BSPC                                                                              &kp DEL   &kp LEFT     &trans     &trans      &kp CAPS       &kp BSLH
+            &kp F4         &kp TAB      &trans      &kp PG_UP  &kp PG_DN   &trans                                                                                &kp PSCRN &trans       &kp HOME   &kp END     &kp RIGHT      &kp RBKT
+            &trans         &kp ESC      &trans      &kp RET    &kp F4      &kp BSPC                                                                              &kp DEL   &kp LEFT     &trans     &trans      &kp CAPS       &kp BSLH
             &trans         &trans       &trans      &kp DOWN   &kp UP      &trans   &trans           &trans      &trans     &trans    &trans    &trans           &trans    &trans       &trans     &trans      &trans         &trans
             &magic MAGIC 0 &trans       &trans      &trans     &trans               &kp BSPC         &trans      &trans     &trans    &trans    &kp DEL                    &trans       &trans     &trans      &trans         &trans
             >;
