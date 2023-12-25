@@ -147,10 +147,10 @@
 // provides instant modifier activation for keyboard-only usage, so this
 // setting is meant for combined keyboard/mouse usage such as mod-clicks.
 //
-#define HOMEY_TAPPING_TERM 280 // TAPPING_TERM + ALLOW_CROSSOVER_AFTER
+#define HOMEY_TAPPING_TERM 200 // TAPPING_TERM + ALLOW_CROSSOVER_AFTER
 
 //
 // THUMB_TAPPING_TERM defines how long you need to hold (milliseconds)
 // a thumb key to activate a layer.  Shorter holds are treated as taps.
 //
-#define THUMB_TAPPING_TERM 250
+#define THUMB_TAPPING_TERM 200
