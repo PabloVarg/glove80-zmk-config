@@ -48,8 +48,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOME_ROW_MODS_LEFT_HAND";
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <THUMB_KEYS>;
-            hold-trigger-on-release;
+            hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
+            # hold-trigger-on-release;
             tapping-term-ms = <HOMEY_TAPPING_TERM>;
             quick-tap-ms = <TYPING_STREAK_TERM>;
             #binding-cells = <2>;
@@ -60,8 +60,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOME_ROW_MODS_RIGHT_HAND";
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <THUMB_KEYS>;
-            hold-trigger-on-release;
+            hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
+            # hold-trigger-on-release;
             tapping-term-ms = <HOMEY_TAPPING_TERM>;
             quick-tap-ms = <TYPING_STREAK_TERM>;
             #binding-cells = <2>;
