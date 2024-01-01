@@ -47,7 +47,7 @@
         lh: home_row_mods_left_hand {
             compatible = "zmk,behavior-hold-tap";
             label = "HOME_ROW_MODS_LEFT_HAND";
-            flavor = "tap-prefered";
+            flavor = "tap-preferred";
             hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
             hold-trigger-on-release;
             tapping-term-ms = <HOMEY_TAPPING_TERM>;
