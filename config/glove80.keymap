@@ -122,8 +122,8 @@
             &kp GRAVE      &kp N1       &kp N2      &kp N3     &kp N4      &kp N5                                                                                &kp N6    &kp N7       &kp N8     &kp N9      &kp N0         &kp MINUS
             &kp TAB        &kp Q        &kp W       &kp E      &kp R       &kp T                                                                                 &kp Y     &kp U        &kp I      &kp O       &kp P          &kp LBKT
             &kp ESC        &kp A        &kp S       &kp D      &kp F       &kp G                                                                                 &kp H     &kp J        &kp K      &kp L       &kp SEMI       &kp SQT
-            &kp LSHFT      &kp Z        &kp X       &kp C      &kp V       &kp B    &kp LSHFT        &kp BSPC    &kp LALT   &kp RALT  &kp DEL   &kp RSHFT        &kp N     &kp M        &kp COMMA  &kp DOT     &kp FSLH       &kp RSHFT
-            &magic MAGIC 0 &kp LSHFT    &kp LCTRL   &kp LGUI   &mo NUM              &kp SPACE        &mo LOWER   &kp LALT   &kp RALT  &mo LOWER &kp SPACE                  &mo NUM      &kp RGUI   &kp RCTRL   &kp RSHFT      &none
+            &kp LSHFT      &kp Z        &kp X       &kp C      &kp V       &kp B    &kp LSHFT        &kp LALT    &kp BSPC   &kp DEL   &kp RALT   &kp RSHFT        &kp N     &kp M        &kp COMMA  &kp DOT     &kp FSLH       &kp RSHFT
+            &magic MAGIC 0 &kp LSHFT    &kp LCTRL   &kp LGUI   &mo NUM              &mo LOWER        &kp SPACE   &kp LALT   &kp RALT  &kp SPACE &mo LOWER                  &mo NUM      &kp RGUI   &kp RCTRL   &kp RSHFT      &none
             >;
         };
 
