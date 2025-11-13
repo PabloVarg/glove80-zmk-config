@@ -131,9 +131,9 @@
             bindings = <
             &kp F11        &kp F12      &trans      &trans     &trans                                                                                                      &trans       &trans     &trans      &trans         &trans
             &trans         &trans       &trans      &trans     &trans      &trans                                                                                &trans    &trans       &trans     &trans      &trans         &trans
-            &kp F4         &kp TAB      &trans      &kp PG_UP  &kp PG_DN   &trans                                                                                &kp PSCRN &kp GRAVE    &kp HOME   &kp END     &kp RIGHT      &kp RBKT
+            &kp F4         &kp TAB      &trans      &kp PG_UP  &kp PG_DN   &trans                                                                                &kp PSCRN &trans       &kp HOME   &kp END     &kp RIGHT      &kp RBKT
             &trans         &kp ESC      &trans      &kp RET    &kp TAB     &kp BSPC                                                                              &kp DEL   &kp LEFT     &trans     &kp BSLH    &kp CAPS       &kp BSLH
-            &trans         &trans       &trans      &kp DOWN   &kp UP      &trans   &trans           &trans      &trans     &trans    &trans    &trans           &trans    &trans       &trans     &trans      &trans         &trans
+            &trans         &trans       &trans      &kp DOWN   &kp UP      &trans   &trans           &trans      &trans     &trans    &trans    &trans           &trans    &gresc       &trans     &trans      &trans         &trans
             &magic MAGIC 0 &trans       &trans      &trans     &kp BSPC             &kp BSPC         &trans      &trans     &trans    &trans    &kp DEL                    &kp DEL      &trans     &trans      &trans         &trans
             >;
         };
