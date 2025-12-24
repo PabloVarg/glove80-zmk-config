@@ -154,10 +154,10 @@
             bindings = <
             &trans         &trans       &trans      &trans     &trans                                                                                                      &trans       &trans     &trans      &trans         &trans
             &trans         &trans       &trans      &trans     &trans      &trans                                                                                &trans    &trans       &trans     &trans      &trans         &trans
-            &trans         &trans       &kp KP_N1   &kp KP_N2  &kp KP_N3   &trans                                                                                &trans    &kp KP_N1    &kp KP_N2  &kp KP_N3   &trans         &trans
-            &trans         &to DEFAULT  &kp KP_N4   &kp KP_N5  &kp KP_N6   &trans                                                                                &trans    &kp KP_N4    &kp KP_N5  &kp KP_N6   &trans         &trans
-            &trans         &trans       &kp KP_N7   &kp KP_N8  &kp KP_N9   &trans   &trans           &trans      &trans     &trans    &trans    &trans           &trans    &kp KP_N7    &kp KP_N8  &kp KP_N9   &trans         &trans
-            &trans         &trans       &trans      &kp KP_N0  &trans               &trans           &trans      &trans     &trans    &trans    &trans                     &trans       &kp KP_N0  &trans      &trans         &trans
+            &trans         &trans       &kp LS(N5)  &kp LS(N8) &kp LS(N4)  &trans                                                                                &trans    &kp LS(N5)   &kp LS(N8) &kp LS(N4)  &trans         &trans
+            &trans         &to DEFAULT  &kp LS(N9)  &kp LS(N3) &kp LS(N0)  &trans                                                                                &trans    &kp LS(N9)   &kp LS(N3) &kp LS(N0)  &trans         &trans
+            &trans         &trans       &kp LS(N2)  &kp LS(MINUS) &kp LS(N6) &trans &trans           &trans      &trans     &trans    &trans    &trans           &trans    &kp LS(N2)   &kp LS(MINUS) &kp LS(N6) &trans       &trans
+            &trans         &trans       &trans      &kp LS(N7) &trans               &trans           &trans      &trans     &trans    &trans    &trans                     &trans       &kp LS(N7) &trans      &trans         &trans
             >;
         };
 
