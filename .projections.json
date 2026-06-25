@@ -1,0 +1,6 @@
+{
+    "*": {
+        "make": "bash flash",
+        "start": "bash flash"
+    }
+}
