@@ -1,9 +1,6 @@
 #! /usr/bin/env bash
 set -euo pipefail
 
-[[ ! -f out/glove80.uf2.zip ]] && echo "No firmware found" && exit
-unzip out/glove80.uf2.zip -d out/ && rm out/glove80.uf2.zip
-
 echo "Waiting 5 seconds..."
 sleep 1s
 echo "Waiting 4 seconds..."
@@ -16,8 +13,15 @@ echo "Waiting 1 seconds..."
 sleep 1s
 echo "Flashing!"
 
+tmp_dir=$(mktemp -d)
+trap "rm -rf ${tmp_dir}" EXIT
+
+[[ ! -f out/glove80.uf2.zip ]] && echo "No firmware found" && exit
+unzip out/glove80.uf2.zip -d "${tmp_dir}"
+
 device="$(lsblk -f | grep GLV80 | cut -d' ' -f1)"
 
 sudo mount --mkdir "/dev/${device}" /mnt/glove/
-sudo mv "out/glove80.uf2" "/mnt/glove/CURRENT.UF2"
+sudo mv "${tmp_dir}/glove80.uf2" "/mnt/glove/CURRENT.UF2"
+trap "rm -f out/glove80.uf2.zip" EXIT
 sudo umount /mnt/glove/
